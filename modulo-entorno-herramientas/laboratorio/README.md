@@ -22,42 +22,55 @@ laboratorio/
 
 ## Pasos Realizados
 
-### 1. Configuración de Python 3.12 con pyenv
+### 1. Verificación de Python 3.12
+
+Ubuntu 24.04 ya incluye Python 3.12 por defecto:
 
 ```bash
-# Instalar pyenv
-curl https://pyenv.run | bash
+# Verificar versión de Python
+python3.12 --version  # Debe mostrar Python 3.12.3 o superior
 
-# Configurar en shell
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
-
-# Instalar Python 3.12
-pyenv install 3.12.0
-
-# Establecer versión local para este proyecto
-pyenv local 3.12.0
+# Verificar que SQLite funciona
+python3.12 -c "import sqlite3; print('SQLite:', sqlite3.sqlite_version)"
 ```
 
-### 2. Inicialización del Proyecto con Poetry
+**Nota:** En versiones anteriores de Ubuntu (22.04 o anteriores) se requería pyenv para instalar Python 3.12. Con Ubuntu 24.04 esto ya no es necesario.
+
+### 2. Instalación de Poetry
 
 ```bash
-# Inicializar proyecto
-poetry init --no-interaction \
-  --name "laboratorio-entorno" \
-  --description "Laboratorio del módulo Entorno y Herramientas" \
-  --python "^3.12"
+# Instalar Poetry (si no está instalado)
+curl -sSL https://install.python-poetry.org | python3 -
+
+# Agregar Poetry al PATH (agregar a ~/.bashrc o ~/.zshrc)
+export PATH="$HOME/.local/bin:$PATH"
+
+# Verificar instalación
+poetry --version  # Debe mostrar Poetry 2.3.4 o superior
 ```
 
-### 3. Instalación de Herramientas de Calidad
+### 3. Inicialización del Proyecto con Poetry
 
 ```bash
-# Instalar herramientas de desarrollo
-poetry add --group dev black isort ruff pre-commit pytest
+# Configurar Poetry para usar Python 3.12 del sistema
+poetry env use python3.12
+
+# El proyecto ya está inicializado con pyproject.toml
+# Solo necesitas instalar las dependencias
+poetry install
 ```
 
-### 4. Configuración de Herramientas en pyproject.toml
+### 4. Instalación de Herramientas de Calidad
+
+Las herramientas ya están definidas en `pyproject.toml` y se instalan automáticamente con `poetry install`:
+
+- **black** (26.3.1+): Formateador de código
+- **isort** (8.0.1+): Ordenador de imports
+- **ruff** (0.15.10+): Linter ultra rápido
+- **pre-commit** (4.5.1+): Hooks de git
+- **pytest** (9.0.3+): Framework de testing
+
+### 5. Configuración de Herramientas en pyproject.toml
 
 Las herramientas se configuraron en `pyproject.toml`:
 
@@ -73,17 +86,46 @@ Las herramientas se configuraron en `pyproject.toml`:
 - Linter ultra rápido
 - Reglas activadas: E (pycodestyle), W (warnings), F (pyflakes), I (isort), B (bugbear), C4 (comprehensions)
 
-### 5. Configuración de Pre-commit Hooks
+### 6. Configuración de Pre-commit Hooks
 
 El archivo `.pre-commit-config.yaml` configura hooks que se ejecutan automáticamente antes de cada commit:
 
-- trailing-whitespace: Elimina espacios en blanco al final
-- end-of-file-fixer: Asegura nueva línea al final
-- check-yaml: Valida archivos YAML
-- check-added-large-files: Previene commits de archivos grandes
-- black: Formateo automático
-- isort: Ordenamiento de imports
-- ruff: Linting y correcciones automáticas
+- **trailing-whitespace**: Elimina espacios en blanco al final
+- **end-of-file-fixer**: Asegura nueva línea al final
+- **check-yaml**: Valida archivos YAML
+- **check-added-large-files**: Previene commits de archivos grandes
+- **check-merge-conflict**: Detecta marcadores de conflictos de merge
+- **check-toml**: Valida archivos TOML
+- **black**: Formateo automático
+- **isort**: Ordenamiento de imports
+- **ruff**: Linting y correcciones automáticas (con `--fix`)
+- **ruff-format**: Formateo adicional con ruff
+
+**Instalación de pre-commit:**
+
+```bash
+# Instalar los hooks de git
+poetry run pre-commit install
+
+# Ejecutar manualmente en todos los archivos
+poetry run pre-commit run --all-files
+```
+
+**¿Cómo funciona pre-commit?**
+
+Cuando intentas hacer un `git commit`:
+
+1. **Errores menores** → Pre-commit los corrige automáticamente (espacios, formateo, imports)
+   - Debes revisar los cambios y volver a hacer `git add .` y `git commit`
+2. **Errores graves** → Pre-commit BLOQUEA el commit
+   - Debes corregir manualmente los errores (sintaxis, líneas muy largas, etc.)
+3. **Sin errores** → El commit se realiza exitosamente
+
+**Saltar pre-commit (no recomendado):**
+
+```bash
+git commit --no-verify -m "Mensaje"
+```
 
 ## Demostración de Corrección de Código
 
@@ -155,17 +197,6 @@ Aplica formateo consistente:
 poetry run ruff check --fix . && poetry run isort . && poetry run black .
 ```
 
-### Instalación de Pre-commit
-
-```bash
-# Instalar los hooks de git
-poetry run pre-commit install
-
-# Ejecutar manualmente en todos los archivos
-poetry run pre-commit run --all-files
-```
-
-Una vez instalado, pre-commit se ejecuta automáticamente en cada `git commit`.
 
 ## Resultado: Código Corregido
 
@@ -197,7 +228,10 @@ poetry shell
 poetry show
 
 # Verificar versión de Python
-python --version  # Debe mostrar Python 3.12.0
+python --version  # Debe mostrar Python 3.12.3
+
+# Verificar que SQLite funciona
+python -c "import sqlite3; print('SQLite:', sqlite3.sqlite_version)"
 ```
 
 ## Comandos Útiles
@@ -233,13 +267,16 @@ poetry run black --help
 
 ## Lecciones Aprendidas
 
-1. **Poetry simplifica la gestión de dependencias** comparado con pip + virtualenv
-2. **pyproject.toml centraliza toda la configuración** del proyecto
-3. **Black elimina debates sobre estilo** - "The uncompromising formatter"
-4. **Ruff es extremadamente rápido** - reemplaza múltiples herramientas
-5. **Pre-commit hooks previenen commits con código de mala calidad**
-6. **PEP 8 mejora la legibilidad** y consistencia del código
-7. **Las herramientas automatizan tareas repetitivas** de formateo
+1. **Ubuntu 24.04 incluye Python 3.12** - No se requiere pyenv para versiones modernas
+2. **Poetry simplifica la gestión de dependencias** comparado con pip + virtualenv
+3. **pyproject.toml centraliza toda la configuración** del proyecto
+4. **Black elimina debates sobre estilo** - "The uncompromising formatter"
+5. **Ruff es extremadamente rápido** - reemplaza múltiples herramientas
+6. **Pre-commit hooks previenen commits con código de mala calidad**
+   - Corrigen automáticamente errores menores
+   - Bloquean commits con errores graves que requieren corrección manual
+7. **PEP 8 mejora la legibilidad** y consistencia del código
+8. **Las herramientas automatizan tareas repetitivas** de formateo
 
 ## Próximos Pasos
 
@@ -248,6 +285,16 @@ poetry run black --help
 3. Estudiar los siguientes módulos del curso
 4. Practicar escribiendo código que cumpla PEP 8 desde el inicio
 5. Explorar configuraciones avanzadas de ruff y black
+
+## Notas de Actualización (Ubuntu 24.04)
+
+Este laboratorio fue actualizado de Ubuntu 22.04 a Ubuntu 24.04:
+
+- ✅ **Eliminada dependencia de pyenv** - Ubuntu 24.04 incluye Python 3.12.3
+- ✅ **Poetry reinstalado** - Versión 2.3.4 con configuración limpia
+- ✅ **SQLite funcional** - Python 3.12 del sistema incluye soporte SQLite
+- ✅ **Pre-commit configurado** - Hooks instalados y funcionando
+- ✅ **Documentación actualizada** - Instrucciones para Ubuntu 24.04
 
 ## Referencias
 

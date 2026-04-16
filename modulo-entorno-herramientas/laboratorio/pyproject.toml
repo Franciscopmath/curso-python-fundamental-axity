@@ -1,27 +1,25 @@
-[project]
+[tool.poetry]
 name = "laboratorio-entorno"
 version = "0.1.0"
 description = "Laboratorio del módulo Entorno y Herramientas"
-authors = [
-    {name = "Francisco",email = "francisco@example.com"}
-]
-requires-python = ">=3.12"
-dependencies = [
-]
+authors = ["Francisco <francisco@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+black = "^26.3.1"
+isort = "^8.0.1"
+ruff = "^0.15.10"
+pre-commit = "^4.5.1"
+pytest = "^9.0.3"
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[dependency-groups]
-dev = [
-    "black (>=26.3.1,<27.0.0)",
-    "isort (>=8.0.1,<9.0.0)",
-    "ruff (>=0.15.10,<0.16.0)",
-    "pre-commit (>=4.5.1,<5.0.0)",
-    "pytest (>=9.0.3,<10.0.0)"
-]
 
 [tool.black]
 line-length = 88
