@@ -16,6 +16,14 @@ fundamental-level/
 │       ├── codigo_corregido.py
 │       ├── README.md
 │       └── INSTRUCCIONES_INSTALACION.md
+├── modulo-fundamentos-lenguaje/
+│   ├── contenido/
+│   │   └── README.md          # Documentación teórica completa
+│   └── laboratorio/
+│       ├── pyproject.toml     # Configuración Poetry
+│       ├── procesador_productos.py  # Script principal
+│       ├── productos.json     # Datos de ejemplo
+│       └── README.md          # Instrucciones del laboratorio
 ├── .gitignore
 └── README.md                   # Este archivo
 ```
@@ -42,11 +50,34 @@ fundamental-level/
 
 **Ubicación:** [modulo-entorno-herramientas/](modulo-entorno-herramientas/)
 
+### ✅ Módulo 2: Fundamentos del Lenguaje
+
+**Contenidos cubiertos:**
+- Sintaxis e indentación
+- Variables y alcance (LEGB)
+- Tipos básicos: int, float, str, bool, None
+- Colecciones: list, dict, set, tuple
+- Control de flujo: if, for, while, comprehensions
+- Errores y excepciones (try-except-finally)
+- Expresiones regulares (re)
+- Argumentos de línea de comandos (argparse)
+
+**Laboratorio implementado:**
+- Script de procesamiento de archivos JSON
+- Filtrado y agregación de datos de productos
+- Manejo robusto de errores de archivo y formato
+- Excepciones personalizadas
+- CLI con múltiples opciones de filtrado
+- Uso de todas las estructuras de datos
+- Type hints completos
+- 100% PEP 8 compliant
+
+**Ubicación:** [modulo-fundamentos-lenguaje/](modulo-fundamentos-lenguaje/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
 
-- Fundamentos del lenguaje
 - Programación Pythonica
 - Objetos y modelos de datos
 - Tipos estáticos opcionales

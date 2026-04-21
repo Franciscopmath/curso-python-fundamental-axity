@@ -1,0 +1,167 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Laptop Dell XPS 13",
+      "categoria": "Electrónica",
+      "precio": 1299.99,
+      "stock": 15,
+      "disponible": true,
+      "especificaciones": {
+        "procesador": "Intel i7",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD"
+      },
+      "etiquetas": ["portátil", "trabajo", "premium"]
+    },
+    {
+      "id": 2,
+      "nombre": "Mouse Logitech MX Master 3",
+      "categoria": "Accesorios",
+      "precio": 99.99,
+      "stock": 45,
+      "disponible": true,
+      "especificaciones": {
+        "conexion": "Bluetooth/USB",
+        "dpi": "4000"
+      },
+      "etiquetas": ["inalámbrico", "ergonómico"]
+    },
+    {
+      "id": 3,
+      "nombre": "Teclado Mecánico Keychron K2",
+      "categoria": "Accesorios",
+      "precio": 89.99,
+      "stock": 0,
+      "disponible": false,
+      "especificaciones": {
+        "switches": "Gateron Brown",
+        "retroiluminacion": "RGB"
+      },
+      "etiquetas": ["mecánico", "compacto", "gaming"]
+    },
+    {
+      "id": 4,
+      "nombre": "Monitor LG UltraWide 34\"",
+      "categoria": "Electrónica",
+      "precio": 599.99,
+      "stock": 8,
+      "disponible": true,
+      "especificaciones": {
+        "resolucion": "3440x1440",
+        "frecuencia": "144Hz",
+        "panel": "IPS"
+      },
+      "etiquetas": ["ultrawide", "gaming", "profesional"]
+    },
+    {
+      "id": 5,
+      "nombre": "Auriculares Sony WH-1000XM5",
+      "categoria": "Audio",
+      "precio": 399.99,
+      "stock": 22,
+      "disponible": true,
+      "especificaciones": {
+        "cancelacion_ruido": true,
+        "autonomia": "30 horas",
+        "conexion": "Bluetooth 5.2"
+      },
+      "etiquetas": ["inalámbrico", "noise-cancelling", "premium"]
+    },
+    {
+      "id": 6,
+      "nombre": "Webcam Logitech C920",
+      "categoria": "Accesorios",
+      "precio": 79.99,
+      "stock": 31,
+      "disponible": true,
+      "especificaciones": {
+        "resolucion": "1080p",
+        "fps": "30"
+      },
+      "etiquetas": ["streaming", "videoconferencia"]
+    },
+    {
+      "id": 7,
+      "nombre": "SSD Samsung 970 EVO Plus 1TB",
+      "categoria": "Almacenamiento",
+      "precio": 129.99,
+      "stock": 18,
+      "disponible": true,
+      "especificaciones": {
+        "interfaz": "NVMe M.2",
+        "velocidad_lectura": "3500 MB/s",
+        "velocidad_escritura": "3300 MB/s"
+      },
+      "etiquetas": ["nvme", "alto-rendimiento"]
+    },
+    {
+      "id": 8,
+      "nombre": "Micrófono Blue Yeti",
+      "categoria": "Audio",
+      "precio": 129.99,
+      "stock": 12,
+      "disponible": true,
+      "especificaciones": {
+        "patron_polar": "Cardioide/Bidireccional/Omnidireccional",
+        "conexion": "USB"
+      },
+      "etiquetas": ["streaming", "podcast", "profesional"]
+    },
+    {
+      "id": 9,
+      "nombre": "Silla Ergonómica Herman Miller Aeron",
+      "categoria": "Mobiliario",
+      "precio": 1495.00,
+      "stock": 5,
+      "disponible": true,
+      "especificaciones": {
+        "material": "Malla",
+        "ajustes": "Múltiples",
+        "garantia": "12 años"
+      },
+      "etiquetas": ["ergonómica", "premium", "oficina"]
+    },
+    {
+      "id": 10,
+      "nombre": "Hub USB-C Anker 7-en-1",
+      "categoria": "Accesorios",
+      "precio": 49.99,
+      "stock": 0,
+      "disponible": false,
+      "especificaciones": {
+        "puertos": "3x USB-A, 1x USB-C, HDMI, SD, microSD",
+        "potencia": "100W PD"
+      },
+      "etiquetas": ["hub", "portatil"]
+    },
+    {
+      "id": 11,
+      "nombre": "Tablet iPad Air 5ta Gen",
+      "categoria": "Electrónica",
+      "precio": 749.99,
+      "stock": 10,
+      "disponible": true,
+      "especificaciones": {
+        "pantalla": "10.9 pulgadas",
+        "chip": "M1",
+        "almacenamiento": "256GB"
+      },
+      "etiquetas": ["tablet", "apple", "premium"]
+    },
+    {
+      "id": 12,
+      "nombre": "Lámpara de Escritorio LED",
+      "categoria": "Mobiliario",
+      "precio": 45.99,
+      "stock": 27,
+      "disponible": true,
+      "especificaciones": {
+        "temperatura_color": "Ajustable 2700K-6500K",
+        "dimmer": true,
+        "brazo": "Ajustable"
+      },
+      "etiquetas": ["led", "regulable", "oficina"]
+    }
+  ]
+}
