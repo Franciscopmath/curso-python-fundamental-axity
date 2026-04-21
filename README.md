@@ -24,6 +24,13 @@ fundamental-level/
 │       ├── procesador_productos.py  # Script principal
 │       ├── productos.json     # Datos de ejemplo
 │       └── README.md          # Instrucciones del laboratorio
+├── modulo-funciones-pythonic/
+│   ├── contenido/
+│   │   └── README.md          # Teoría avanzada de funciones
+│   └── laboratorio/
+│       ├── pyproject.toml     # Configuración Poetry
+│       ├── utilidades_pythonic.py  # Decoradores, generadores, context managers
+│       └── README.md          # Instrucciones detalladas
 ├── .gitignore
 └── README.md                   # Este archivo
 ```
@@ -74,11 +81,36 @@ fundamental-level/
 
 **Ubicación:** [modulo-fundamentos-lenguaje/](modulo-fundamentos-lenguaje/)
 
+### ✅ Módulo 3: Funciones y Programación Pythonic
+
+**Contenidos cubiertos:**
+- Funciones: argumentos posicionales, nombrados, *args/**kwargs
+- Lambdas y funciones anónimas
+- Closures y scope de funciones
+- Decoradores: simples, con parámetros, preservación de metadata
+- Iteradores y protocolo de iteración
+- Generadores: yield, yield from, expresiones generadoras
+- Comprensiones: list, dict, set
+- Context managers: __enter__/__exit__, @contextmanager
+- Programación pythonic: idiomas, EAFP, duck typing
+
+**Laboratorio implementado:**
+- Decorador de reintentos con backoff exponencial y jitter
+- Generador por lotes (batch processing)
+- Generador con ventanas deslizantes (windowed)
+- Context manager de temporización (3 implementaciones)
+- Temporizador acumulativo para benchmarks
+- 600+ líneas de código pythonic avanzado
+- Type hints completos con TypeVar
+- Ejemplos ejecutables de todos los conceptos
+- 100% PEP 8 compliant
+
+**Ubicación:** [modulo-funciones-pythonic/](modulo-funciones-pythonic/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
 
-- Programación Pythonica
 - Objetos y modelos de datos
 - Tipos estáticos opcionales
 - Calidad y testing
