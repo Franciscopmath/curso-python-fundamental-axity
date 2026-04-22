@@ -1,0 +1,47 @@
+[project]
+name = "objetos-modelos"
+version = "0.1.0"
+description = "Laboratorio de Objetos y Modelos de Datos"
+authors = [
+    {name = "Francisco",email = "francisco@example.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic (>=2.10.6,<3.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.3.1,<27.0.0)",
+    "isort (>=8.0.1,<9.0.0)",
+    "ruff (>=0.15.11,<0.16.0)",
+    "pytest (>=9.0.3,<10.0.0)"
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+]
+ignore = []

@@ -107,11 +107,36 @@ fundamental-level/
 
 **Ubicación:** [modulo-funciones-pythonic/](modulo-funciones-pythonic/)
 
+### ✅ Módulo 4: Objetos y Modelos de Datos
+
+**Contenidos cubiertos:**
+- Clases: definición, atributos, métodos
+- Herencia: simple, múltiple, super(), MRO
+- Composición: preferir composición sobre herencia
+- Dunder methods: __init__, __str__, __repr__, __eq__, __lt__, __hash__
+- Dataclasses: @dataclass, field(), __post_init__
+- Attrs: alternativa a dataclasses con más features
+- Pydantic: validación y serialización de datos
+- Comparación entre dataclasses, attrs y Pydantic
+
+**Laboratorio implementado:**
+- Sistema de gestión de pedidos completo
+- Dataclass Pedido con propiedades calculadas (subtotal, impuestos, total)
+- Métodos de comparación personalizados (__eq__, __lt__, etc.)
+- Pydantic models (PedidoIn/PedidoOut) con validación
+- Conversión bidireccional Pydantic ↔ Entidades
+- Gestión de estado con transiciones válidas
+- Uso de Decimal para precisión monetaria
+- Enumeraciones (StrEnum) para valores constantes
+- 900+ líneas de código con 7 ejemplos ejecutables
+- Type hints completos y 100% PEP 8 compliant
+
+**Ubicación:** [modulo-objetos-modelos/](modulo-objetos-modelos/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
 
-- Objetos y modelos de datos
 - Tipos estáticos opcionales
 - Calidad y testing
 - Librerías estándar
