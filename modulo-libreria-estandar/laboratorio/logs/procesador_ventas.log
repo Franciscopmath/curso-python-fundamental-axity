@@ -1,0 +1,97 @@
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:514 - ================================================================================
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:515 - Iniciando procesador de ventas
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:516 - ================================================================================
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:524 - Paso 1: Leyendo datos de CSV
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:207 - Leyendo archivo CSV: data/ventas_2024.csv
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240115-LAP - Laptop Dell XPS 13 (Total: $2599.98)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240116-MOU - Mouse Logitech MX (Total: $499.95)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240118-TEC - Teclado Mecánico (Total: $450.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240120-MON - Monitor 4K Samsung (Total: $450.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240122-AUR - Auriculares Sony (Total: $799.96)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240201-CAM - Camiseta Nike (Total: $299.90)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240203-PAN - Pantalón Levis (Total: $399.95)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240205-ZAP - Zapatos Adidas (Total: $269.97)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240208-CHA - Chaqueta North Face (Total: $319.98)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240210-GOR - Gorra Nike (Total: $199.92)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240301-CAF - Café Premium (Total: $259.80)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240305-TÉ  - Té Verde Orgánico (Total: $149.85)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240310-CHO - Chocolate Artesanal (Total: $174.75)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240315-GAL - Galletas Integrales (Total: $149.70)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240320-MIE - Miel Orgánica (Total: $159.90)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240402-PYT - Python Avanzado (Total: $546.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240405-CLE - Clean Code (Total: $416.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240408-DES - Design Patterns (Total: $293.94)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240412-REF - Refactoring (Total: $550.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240415-ALG - Algoritmos (Total: $300.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240501-LÁM - Lámpara LED (Total: $251.93)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240505-COJ - Cojines Decorativos (Total: $239.88)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240510-ESP - Espejo de Pared (Total: $300.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240515-COR - Cortinas Blackout (Total: $275.94)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240520-ALF - Alfombra Moderna (Total: $360.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240601-LAP - Laptop HP Pavilion (Total: $2699.97)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240605-TAB - Tablet Samsung (Total: $1999.95)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240610-SMA - Smart Watch (Total: $1999.92)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240615-CÁM - Cámara Canon (Total: $2999.98)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240620-IMP - Impresora HP (Total: $1199.96)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240701-PLA - Playera Polo (Total: $599.85)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240705-JEA - Jeans Slim Fit (Total: $559.92)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240710-SUD - Sudadera con Capucha (Total: $329.94)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240715-CAL - Calcetines Deportivos (Total: $259.80)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240720-SHO - Shorts de Mezclilla (Total: $349.90)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240801-ACE - Aceite de Oliva (Total: $341.82)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240805-PAS - Pasta Italiana (Total: $224.75)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240810-SAL - Salsa Tomate (Total: $179.70)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240815-ESP - Especias Mixtas (Total: $263.78)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240820-VIN - Vinagre Balsámico (Total: $179.88)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240901-JAV - JavaScript Guía Completa (Total: $432.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240905-REA - React y Redux (Total: $384.93)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240910-NOD - Node.js en Acción (Total: $550.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240915-TYP - TypeScript Handbook (Total: $281.94)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20240920-VUE - Vue.js 3 (Total: $399.92)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20241001-LÁM - Lámpara de Mesa (Total: $386.91)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20241005-REL - Reloj de Pared (Total: $275.00)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20241010-PLA - Plantas Decorativas (Total: $389.85)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20241015-JAR - Jarrones Modernos (Total: $311.92)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:240 - Venta procesada: 20241020-CUA - Cuadros Abstractos (Total: $340.00)
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:256 - CSV procesado: 50 ventas exitosas, 0 errores
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:532 - Paso 2: Calculando métricas
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:276 - Calculando métricas de 50 ventas
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:298 - Total ventas: $28658.89
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:299 - Ticket promedio: $573.18
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:306 - Categorías procesadas: 5
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:313 - Regiones procesadas: 4
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:329 - Top producto: Cámara Canon con $2999.98
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:340 - Métricas calculadas exitosamente
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:536 - Paso 3: Generando resumen
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:540 - Paso 4: Exportando a JSON
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:425 - Exportando resultados a JSON: output/metricas_ventas.json
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:445 - JSON exportado exitosamente: output/metricas_ventas.json (17.94 KB)
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:544 - Paso 5: Ejemplos de filtrado
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:379 - Filtrando ventas - Categoría: Electrónica, Región: None, Fechas: None - None
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:391 - Filtro por categoría 'Electrónica': 10 ventas
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:405 - Filtrado completo: 10 ventas (de 50 originales)
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:276 - Calculando métricas de 10 ventas
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:298 - Total ventas: $15699.67
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:299 - Ticket promedio: $1569.97
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:306 - Categorías procesadas: 1
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:313 - Regiones procesadas: 4
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:329 - Top producto: Cámara Canon con $2999.98
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:340 - Métricas calculadas exitosamente
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:550 - Ventas de Electrónica: $15699.67 (10 transacciones)
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:379 - Filtrando ventas - Categoría: None, Región: None, Fechas: 2024-07-22 00:00:00 - 2024-10-20 00:00:00
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:399 - Filtro por fecha inicio: 15 ventas
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:403 - Filtro por fecha fin: 15 ventas
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:405 - Filtrado completo: 15 ventas (de 50 originales)
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:276 - Calculando métricas de 15 ventas
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:298 - Total ventas: $4942.40
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:299 - Ticket promedio: $329.49
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:306 - Categorías procesadas: 3
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:313 - Regiones procesadas: 4
+2026-04-28 03:59:29 - procesador_ventas - DEBUG - procesador_ventas.py:329 - Top producto: Node.js en Acción con $550.00
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:340 - Métricas calculadas exitosamente
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:562 - Ventas último trimestre: $4942.40 (15 transacciones)
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:568 - ================================================================================
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:569 - Procesamiento completado exitosamente
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:570 - Archivo JSON generado: /home/franciscomath/fundamental-level/modulo-libreria-estandar/laboratorio/output/metricas_ventas.json
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:571 - Logs guardados en: /home/franciscomath/fundamental-level/modulo-libreria-estandar/laboratorio/logs/procesador_ventas.log
+2026-04-28 03:59:29 - procesador_ventas - INFO - procesador_ventas.py:572 - ================================================================================

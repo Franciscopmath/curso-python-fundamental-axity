@@ -165,13 +165,42 @@ fundamental-level/
 
 **Ubicación:** [modulo-tipado-calidad/](modulo-tipado-calidad/)
 
+### ✅ Módulo 6: Librería Estándar y E/S
+
+**Contenidos cubiertos:**
+- pathlib: Manejo moderno de rutas y archivos
+- CSV: Lectura y escritura de datos tabulares con csv.DictReader/DictWriter
+- JSON: Serialización y deserialización con json.load/dump
+- YAML: Configuración legible (con pyyaml)
+- datetime: Fechas, horas, zonas horarias y cálculos temporales
+- logging: Sistema completo con niveles (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+- subprocess: Ejecución segura de comandos externos
+- Manejo de encodings (UTF-8, Latin-1)
+- Context managers (with) para gestión de recursos
+
+**Laboratorio implementado:**
+- Procesador de ventas con ingesta de CSV (600+ líneas)
+- Lectura de 50 registros de ventas desde CSV
+- Cálculo de métricas agregadas (total, promedio, min, max)
+- Agregaciones por categoría, región, mes
+- Top 10 productos y vendedores
+- Exportación completa a JSON con metadata
+- Sistema de logging con múltiples niveles
+- RotatingFileHandler (10 MB, 5 backups)
+- Logging a consola (INFO) y archivo (DEBUG)
+- pathlib para manejo de rutas multiplataforma
+- Decimal para precisión monetaria
+- Filtrado de datos por múltiples criterios
+- Dataclasses con properties calculadas
+- Type hints completos y 100% PEP 8 compliant
+
+**Ubicación:** [modulo-libreria-estandar/](modulo-libreria-estandar/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
 
 - Calidad y testing (pytest)
-- Librerías estándar
-- I/O y manejo de archivos
 - HTTP y consumo de APIs
 
 ## Cómo Usar Este Repositorio

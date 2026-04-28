@@ -1,0 +1,51 @@
+fecha,producto,categoria,cantidad,precio_unitario,vendedor,region
+2024-01-15,Laptop Dell XPS 13,Electrónica,2,1299.99,Ana García,Norte
+2024-01-16,Mouse Logitech MX,Electrónica,5,99.99,Juan Pérez,Sur
+2024-01-18,Teclado Mecánico,Electrónica,3,150.00,Ana García,Norte
+2024-01-20,Monitor 4K Samsung,Electrónica,1,450.00,María López,Centro
+2024-01-22,Auriculares Sony,Electrónica,4,199.99,Juan Pérez,Sur
+2024-02-01,Camiseta Nike,Ropa,10,29.99,Carlos Ruiz,Este
+2024-02-03,Pantalón Levis,Ropa,5,79.99,Ana García,Norte
+2024-02-05,Zapatos Adidas,Ropa,3,89.99,María López,Centro
+2024-02-08,Chaqueta North Face,Ropa,2,159.99,Juan Pérez,Sur
+2024-02-10,Gorra Nike,Ropa,8,24.99,Carlos Ruiz,Este
+2024-03-01,Café Premium,Alimentos,20,12.99,Ana García,Norte
+2024-03-05,Té Verde Orgánico,Alimentos,15,9.99,María López,Centro
+2024-03-10,Chocolate Artesanal,Alimentos,25,6.99,Juan Pérez,Sur
+2024-03-15,Galletas Integrales,Alimentos,30,4.99,Carlos Ruiz,Este
+2024-03-20,Miel Orgánica,Alimentos,10,15.99,Ana García,Norte
+2024-04-02,Python Avanzado,Libros,12,45.50,María López,Centro
+2024-04-05,Clean Code,Libros,8,52.00,Juan Pérez,Sur
+2024-04-08,Design Patterns,Libros,6,48.99,Ana García,Norte
+2024-04-12,Refactoring,Libros,10,55.00,Carlos Ruiz,Este
+2024-04-15,Algoritmos,Libros,5,60.00,María López,Centro
+2024-05-01,Lámpara LED,Hogar,7,35.99,Ana García,Norte
+2024-05-05,Cojines Decorativos,Hogar,12,19.99,Juan Pérez,Sur
+2024-05-10,Espejo de Pared,Hogar,4,75.00,María López,Centro
+2024-05-15,Cortinas Blackout,Hogar,6,45.99,Carlos Ruiz,Este
+2024-05-20,Alfombra Moderna,Hogar,3,120.00,Ana García,Norte
+2024-06-01,Laptop HP Pavilion,Electrónica,3,899.99,Juan Pérez,Sur
+2024-06-05,Tablet Samsung,Electrónica,5,399.99,María López,Centro
+2024-06-10,Smart Watch,Electrónica,8,249.99,Carlos Ruiz,Este
+2024-06-15,Cámara Canon,Electrónica,2,1499.99,Ana García,Norte
+2024-06-20,Impresora HP,Electrónica,4,299.99,Juan Pérez,Sur
+2024-07-01,Playera Polo,Ropa,15,39.99,María López,Centro
+2024-07-05,Jeans Slim Fit,Ropa,8,69.99,Carlos Ruiz,Este
+2024-07-10,Sudadera con Capucha,Ropa,6,54.99,Ana García,Norte
+2024-07-15,Calcetines Deportivos,Ropa,20,12.99,Juan Pérez,Sur
+2024-07-20,Shorts de Mezclilla,Ropa,10,34.99,María López,Centro
+2024-08-01,Aceite de Oliva,Alimentos,18,18.99,Carlos Ruiz,Este
+2024-08-05,Pasta Italiana,Alimentos,25,8.99,Ana García,Norte
+2024-08-10,Salsa Tomate,Alimentos,30,5.99,Juan Pérez,Sur
+2024-08-15,Especias Mixtas,Alimentos,22,11.99,María López,Centro
+2024-08-20,Vinagre Balsámico,Alimentos,12,14.99,Carlos Ruiz,Este
+2024-09-01,JavaScript Guía Completa,Libros,9,48.00,Ana García,Norte
+2024-09-05,React y Redux,Libros,7,54.99,Juan Pérez,Sur
+2024-09-10,Node.js en Acción,Libros,11,50.00,María López,Centro
+2024-09-15,TypeScript Handbook,Libros,6,46.99,Carlos Ruiz,Este
+2024-09-20,Vue.js 3,Libros,8,49.99,Ana García,Norte
+2024-10-01,Lámpara de Mesa,Hogar,9,42.99,Juan Pérez,Sur
+2024-10-05,Reloj de Pared,Hogar,5,55.00,María López,Centro
+2024-10-10,Plantas Decorativas,Hogar,15,25.99,Carlos Ruiz,Este
+2024-10-15,Jarrones Modernos,Hogar,8,38.99,Ana García,Norte
+2024-10-20,Cuadros Abstractos,Hogar,4,85.00,Juan Pérez,Sur
