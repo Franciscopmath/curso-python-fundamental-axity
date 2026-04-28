@@ -133,12 +133,43 @@ fundamental-level/
 
 **Ubicación:** [modulo-objetos-modelos/](modulo-objetos-modelos/)
 
+### ✅ Módulo 5: Tipado Estático Opcional y Calidad
+
+**Contenidos cubiertos:**
+- Type hints básicos: int, str, float, bool, list, dict, set, tuple
+- Typing avanzado: Union (|), Literal, TypedDict, Protocol, Generic
+- Type aliases con TypeAlias
+- Callable types para funciones como parámetros
+- Overload para múltiples signatures de funciones
+- Verificadores de tipos: mypy y pyright
+- Límites del tipado dinámico y soluciones
+- PEP 8: guía de estilo de Python
+- PEP 20: Zen de Python como guía de diseño
+- Herramientas modernas: ruff, black, isort
+- Pre-commit hooks para verificaciones automáticas
+- Configuración para CI/CD (GitHub Actions, GitLab CI)
+
+**Laboratorio implementado:**
+- Sistema de biblioteca completamente tipado (800+ líneas)
+- Type hints completos en todas las funciones y métodos
+- Union types (|) para valores opcionales
+- Literal types para valores específicos
+- TypedDict para estructuras de datos JSON
+- Protocol para interfaces estructurales (duck typing tipado)
+- Generic types con TypeVar para funciones genéricas
+- Overload para múltiples signatures
+- Configuración completa de mypy, ruff, black, isort
+- Pre-commit hooks configurados (.pre-commit-config.yaml)
+- 100% PEP 8 compliant (verificado con ruff)
+- Listo para integración continua
+
+**Ubicación:** [modulo-tipado-calidad/](modulo-tipado-calidad/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
 
-- Tipos estáticos opcionales
-- Calidad y testing
+- Calidad y testing (pytest)
 - Librerías estándar
 - I/O y manejo de archivos
 - HTTP y consumo de APIs

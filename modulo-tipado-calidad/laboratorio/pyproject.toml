@@ -1,0 +1,70 @@
+[project]
+name = "tipado-calidad"
+version = "0.1.0"
+description = "Laboratorio de Tipado Estático y Calidad de Código"
+authors = [
+    {name = "Francisco", email = "francisco@example.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.0,<3.0.0)",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.3.1,<27.0.0)",
+    "isort (>=8.0.1,<9.0.0)",
+    "ruff (>=0.15.11,<0.16.0)",
+    "mypy (>=1.10.0,<2.0.0)",
+    "pytest (>=9.0.3,<10.0.0)",
+    "pre-commit (>=4.5.0,<5.0.0)",
+    "types-requests (>=2.32.0,<3.0.0)",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "ANN", # annotations
+    "B",   # bugbear
+    "C4",  # comprehensions
+    "SIM", # simplify
+]
+ignore = [
+    "ANN101", # Missing type annotation for self
+    "ANN102", # Missing type annotation for cls
+    "UP040",  # TypeAlias annotation (keep for compatibility)
+    "UP047",  # Type parameters (keep TypeVar for compatibility)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["ANN"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_ignores = false
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
