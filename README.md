@@ -288,11 +288,39 @@ fundamental-level/
 
 **Ubicación:** [modulo-fastapi-apis/](modulo-fastapi-apis/)
 
+### ✅ Módulo 10: Pruebas y TDD
+
+**Contenidos cubiertos:**
+- pytest: Fixtures, parametrización, markers
+- Mocking con unittest.mock y pytest-mock
+- Property-based testing con Hypothesis
+- Cobertura de código (pytest-cov)
+- Integración en CI/CD
+- TDD: Ciclo Red-Green-Refactor
+
+**Laboratorio implementado:**
+- Sistema de inventario completo con TDD
+- Tests escritos ANTES del código (TDD estricto)
+- 30+ tests organizados por tipo
+- Fixtures reutilizables (conftest.py)
+- Tests parametrizados para múltiples casos
+- Mocking de servicios externos (NotificationService)
+- Property-based tests con Hypothesis
+- Strategies personalizados y examples
+- Markers: unit, integration, slow, property
+- Cobertura >95% con reporte HTML
+- pytest.ini configurado en pyproject.toml
+- Type hints completos
+- Poetry configurado
+- 100% PEP 8 compliant
+
+**Ubicación:** [modulo-testing-tdd/](modulo-testing-tdd/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
 
-- Calidad y testing (pytest)
+- Módulos adicionales según el programa
 
 ## Cómo Usar Este Repositorio
 
