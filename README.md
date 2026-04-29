@@ -255,6 +255,39 @@ fundamental-level/
 
 **Ubicación:** [modulo-orm-datos/](modulo-orm-datos/)
 
+### ✅ Módulo 9: APIs Web con FastAPI
+
+**Contenidos cubiertos:**
+- FastAPI: Framework moderno de alto rendimiento
+- Estructura de proyecto profesional: routers, schemas, models, services
+- Pydantic Schemas: Validación automática y documentación OpenAPI
+- Routers y dependency injection
+- Autenticación JWT: Registro, login, protección de endpoints
+- OAuth2PasswordBearer y OAuth2PasswordRequestForm
+- Middlewares: CORS, logging, custom middlewares
+- Testing de APIs: TestClient, fixtures, DB temporal
+- Documentación automática: Swagger UI y ReDoc
+- Mejores prácticas: response_model, status codes, error handling
+
+**Laboratorio implementado:**
+- API completa de gestión de pedidos (Order Management)
+- Autenticación JWT completa (registro + login)
+- CRUD de Orders con validación Pydantic
+- Modelos User y Order con SQLAlchemy
+- Schemas con validaciones avanzadas (field_validator)
+- Router de autenticación (/auth/register, /auth/token, /auth/me)
+- Router de pedidos (/orders con GET, POST, PUT, DELETE)
+- Autorización: usuarios solo ven sus propios pedidos
+- Middleware CORS configurado
+- Dependency injection (get_db, get_current_user)
+- 30 tests de integración (13 auth + 17 orders)
+- DB temporal SQLite en memoria para tests
+- Documentación OpenAPI generada automáticamente
+- Type hints completos y 100% PEP 8 compliant
+- Poetry configurado con todas las dependencias
+
+**Ubicación:** [modulo-fastapi-apis/](modulo-fastapi-apis/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
