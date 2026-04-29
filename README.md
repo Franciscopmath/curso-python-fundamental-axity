@@ -196,12 +196,41 @@ fundamental-level/
 
 **Ubicación:** [modulo-libreria-estandar/](modulo-libreria-estandar/)
 
+### ✅ Módulo 7: HTTP y Consumo de APIs
+
+**Contenidos cubiertos:**
+- HTTP: Métodos (GET, POST, PUT, PATCH, DELETE), códigos de estado (2xx, 3xx, 4xx, 5xx)
+- httpx: Cliente HTTP moderno con HTTP/2 y soporte async/await
+- Comparación: requests vs httpx vs aiohttp
+- Timeouts: connect, read, write, pool (configuración granular)
+- Reintentos: backoff exponencial, jitter, estrategias de reintento
+- Manejo de errores: TimeoutException, HTTPStatusError, NetworkError
+- Streaming: Descarga eficiente de archivos grandes
+- Autenticación: Bearer tokens, API keys, OAuth 2.0
+- Client reutilizable: Reutilización de conexiones HTTP
+- Async/await: Requests concurrentes con AsyncClient
+- Buenas prácticas: Context managers, verificación de status, logging
+
+**Laboratorio implementado:**
+- 6 ejercicios progresivos completamente funcionales
+- Ejercicio 1: GET requests con GitHub API
+- Ejercicio 2: CRUD completo (POST, PUT, PATCH, DELETE)
+- Ejercicio 3: Manejo robusto de errores y timeouts
+- Ejercicio 4: Reintentos con backoff exponencial y jitter
+- Ejercicio 5: Cliente reutilizable con httpx.Client
+- Ejercicio 6: Streaming de archivos con barra de progreso
+- Uso de APIs públicas: GitHub, JSONPlaceholder, HTTPBin
+- Type hints completos y 100% PEP 8 compliant
+- pyproject.toml con Poetry configurado
+- Todos los ejercicios son ejecutables
+
+**Ubicación:** [modulo-http-apis/](modulo-http-apis/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
 
 - Calidad y testing (pytest)
-- HTTP y consumo de APIs
 
 ## Cómo Usar Este Repositorio
 
