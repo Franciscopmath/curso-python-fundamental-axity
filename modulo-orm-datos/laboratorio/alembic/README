@@ -1,0 +1,10 @@
+Generic single-database configuration for Alembic migrations.
+
+Este directorio contiene las migraciones de base de datos gestionadas por Alembic.
+
+Comandos útiles:
+- alembic revision --autogenerate -m "descripción": Crear nueva migración
+- alembic upgrade head: Aplicar todas las migraciones pendientes
+- alembic downgrade -1: Revertir última migración
+- alembic history: Ver historial de migraciones
+- alembic current: Ver migración actual

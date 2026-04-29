@@ -226,6 +226,35 @@ fundamental-level/
 
 **Ubicación:** [modulo-http-apis/](modulo-http-apis/)
 
+### ✅ Módulo 8: Acceso a Datos y ORM
+
+**Contenidos cubiertos:**
+- sqlite3: Base de datos embebida de la librería estándar
+- Drivers para PostgreSQL (psycopg2/psycopg3) y SQL Server (pyodbc)
+- SQLAlchemy Core: Construcción de consultas SQL mediante expresiones
+- SQLAlchemy ORM: Mapeo objeto-relacional completo
+- Relaciones: Uno a Muchos, Muchos a Muchos, Uno a Uno
+- Transacciones y sesiones: Gestión de contexto y rollback
+- Migraciones con Alembic: Creación, aplicación y reversión
+- MongoDB con Motor: Introducción a bases de datos NoSQL
+- Mejores prácticas: Seguridad, rendimiento, mantenimiento
+
+**Laboratorio implementado:**
+- Sistema completo de gestión de pedidos (e-commerce)
+- Modelos: User, Order, OrderItem con relaciones 1:N
+- CRUD completo para las tres entidades (15+ operaciones)
+- Validaciones con constraints (CHECK, UNIQUE, FK)
+- Cascade deletes (User → Orders → Items)
+- Recálculo automático de totales de pedidos
+- Migración inicial con Alembic (001_initial_schema.py)
+- 21 tests completos con SQLite en memoria
+- Eager loading para optimización de consultas (selectinload)
+- Type hints completos con Mapped[T]
+- pyproject.toml con Poetry configurado
+- 100% PEP 8 compliant
+
+**Ubicación:** [modulo-orm-datos/](modulo-orm-datos/)
+
 ## Próximos Módulos
 
 Los siguientes módulos se agregarán a medida que avance el curso:
